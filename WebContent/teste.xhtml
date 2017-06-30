@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Teste</title>
+</h:head>
+<h:body>
+	<p:outputLabel value="Cadastro Usuário"/>
+
+	<h:form>
+	<h:panelGrid  columns="2" style="margin-bottom:10px" cellpadding="5">
+		<p:outputLabel value="Nome: " />
+		<p:inputText size="20" maxlength="15"/>
+        
+        <p:outputLabel for="german"  value="Calendário:" />
+        <p:calendar id="german" locale="de" navigator="true"  pattern="dd/MM/yyyy" />
+        
+        <p:outputLabel for="console" value="Estado: " />
+        <p:selectOneMenu id="console"  style="width:250px">
+            <f:selectItem itemLabel="Selecione a cidade" itemValue="" />
+            <f:selectItem itemLabel="Rio de Janeiro" itemValue="RJ" />
+            <f:selectItem itemLabel="São Paulo" itemValue="SP" />
+            <f:selectItem itemLabel="Bahia" itemValue="BA" />
+        </p:selectOneMenu>
+ 
+ 		<p:outputLabel value="Senha: " />
+        <p:password id="nonFeedback" maxlength="18" />
+ 
+ 		<p:growl id="growl" life="2000" />
+    	<p:commandButton value="Salvar" />
+ 
+	</h:panelGrid>
+	
+	</h:form>
+</h:body>
+</html>
