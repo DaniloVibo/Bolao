@@ -7,6 +7,13 @@
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+<--! hudd -->
+
+#Tabelas{
+	color:#FF8000;
+	
+}
+
 body
 {
 	margin: 0;
@@ -70,7 +77,7 @@ a:hover
 	{
 		position: relative;
 		display: inline-block;
-		background: #ff0000;
+		background: #FF8000;
 		padding: 0.8em 2em;
 		border-radius: 4px;
 		text-decoration: none;
@@ -87,7 +94,7 @@ a:hover
 
 	.button:hover
 	{
-		background: #c60000;
+		background: #DF7401;
 		color: #FFF !important;
 	}
 
@@ -722,7 +729,7 @@ a:hover
 
 	#header-wrapper
 	{
-		background: url(../images/discord.png) no-repeat center top;
+		background: url(../images/banner-capa.png) no-repeat center top;
 		background-size: cover;
 		position: relative;
 	}
@@ -751,6 +758,7 @@ a:hover
 
 	header h2
 	{
+		color: #FF8000;
 		display: block;
 		margin: 0;
 		padding: 0;
